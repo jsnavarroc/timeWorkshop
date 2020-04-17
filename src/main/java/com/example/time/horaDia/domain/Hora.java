@@ -5,7 +5,7 @@ import lombok.Value;
 
 @Value(staticConstructor = "of")
 public class Hora {
-    private final Integer value;
+    Integer value;
 
     private Hora(Integer value) {
         Preconditions.checkNotNull(value);
