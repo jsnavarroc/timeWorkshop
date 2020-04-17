@@ -2,13 +2,13 @@ package com.example.time.horaDia.domain;
 
 import java.time.LocalTime;
 
-public enum UnidadEnum {
+public enum UnidadTiempoEnum {
     MILISEGUNDOS,
     SEGUNDOS,
     MINUTOS,
     HORAS;
 
-    public static Long fromHour(UnidadEnum unit, LocalTime hour){
+    public static Long fromHour(UnidadTiempoEnum unit, LocalTime hour){
         switch (unit){
             case HORAS:
                 return null;
