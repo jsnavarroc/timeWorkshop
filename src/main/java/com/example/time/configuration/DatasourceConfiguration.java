@@ -1,6 +1,7 @@
 package com.example.time.configuration;
 
 import com.example.time.configuration.domain.DatabaseCredentials;
+import com.example.time.configuration.domain.UnidadTiempoTipo;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.context.annotation.Bean;
@@ -35,6 +36,12 @@ public class DatasourceConfiguration {
 
         return new HikariDataSource(config);
 
+    }
+
+    @Bean
+    public DataSource timeDataSource(UnidadTiempoTipo unidadTiempoTipo){
+        System.out.println(unidadTiempoTipo.getUnidadtiempo());
+        return null;
     }
 
 }
