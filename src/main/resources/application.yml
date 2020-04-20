@@ -4,6 +4,3 @@ spring:
 
 server:
   port: 8081
-
-horadia:
-  unidadtiempo: HORAS

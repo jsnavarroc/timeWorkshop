@@ -1,12 +1,15 @@
 package com.example.time.horaDia.domain;
 
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
+import lombok.Value;
 
-@Data
-@RequiredArgsConstructor
+@Value
 public class HoraDia {
-    @Value("${horadia.unidadtiempo}")
-    private String unidadtiempo;
+    Hora hora;
+    Minuto minuto;
+    Segundo segundo;
+    Integer diaHora;
+
+    public static HoraDia from(Hora hora, Minuto minuto, Segundo segundo, Integer diaHora) {
+        return new HoraDia(hora, minuto, segundo, diaHora);
+    }
 }

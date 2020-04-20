@@ -17,9 +17,7 @@ public class Prueba {
 
     public static void main(String[] args) {
         UnidadTiempoEnum type =  UnidadTiempoEnum.valueOf("HORAS");
-        Long hora =  UnidadTiempoEnum.fromHour(type, LocalTime.now());
-
-        System.out.println(hora);
+        System.out.println(type);
 
     }
 }

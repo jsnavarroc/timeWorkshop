@@ -9,7 +9,7 @@ public class Minuto {
 
     private Minuto(Integer value) {
         Preconditions.checkNotNull(value);
-        Preconditions.checkAgument(value >=0 && 59 <= value);
+        Preconditions.checkAgument(value >=0 && value <= 59);
         this.value = value;
     }
 }

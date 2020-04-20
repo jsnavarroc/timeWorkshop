@@ -6,4 +6,4 @@ database:
   database: times
 
 horadia:
-  unidadtiempo: HORAS
+  unidadtiempo: MINUTOS
