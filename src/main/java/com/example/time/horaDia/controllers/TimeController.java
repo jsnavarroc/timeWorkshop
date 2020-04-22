@@ -31,7 +31,7 @@ public class TimeController {
         String horaDíaNow = hora.getValue()+":"+minuto.getValue()+":"+segundo.getValue();
         System.out.println(">>>"+hora+" "+minuto+" "+segundo);
         UnidadTiempoEnum type =   timeServices.getTimeDatasource();
-        Integer value = Math.toIntExact(UnidadTiempoEnum.fromHour(type, LocalTime.parse(horaDíaNow)));
-        return HoraDia.from(hora,minuto,segundo, value);
+        Integer diaHora = Math.toIntExact(UnidadTiempoEnum.fromHour(type, LocalTime.parse(horaDíaNow)));
+        return HoraDia.from(hora,minuto,segundo, diaHora);
     }
 }
