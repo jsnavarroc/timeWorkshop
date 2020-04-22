@@ -1,13 +1,11 @@
 package com.example.time;
 
 
-import com.example.time.horaDia.domain.Hora;
-import com.example.time.horaDia.domain.Minuto;
-import com.example.time.horaDia.domain.Segundo;
-import com.example.time.horaDia.domain.UnidadTiempoEnum;
+import com.example.time.horaDia.domain.*;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 
+import javax.xml.crypto.Data;
 import java.util.function.Function;
 
 @EnableConfigurationProperties
@@ -33,5 +31,6 @@ public class Prueba {
         System.out.println(minuto);
         System.out.println(segundo);
 
+        //System.out.println(DayTime.of(Hora.of(10), Minuto.of(12),Segundo.of(11)));
     }
 }

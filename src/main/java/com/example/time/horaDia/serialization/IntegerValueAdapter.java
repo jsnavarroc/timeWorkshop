@@ -15,7 +15,8 @@ public class IntegerValueAdapter<T extends IntegerSerializable> implements GsonA
 
     @Override
     public T deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-        return null;
+        Integer value = jsonElement.getAsInt();
+        return factory.apply(value);
     }
 
     @Override
