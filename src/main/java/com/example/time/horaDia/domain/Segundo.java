@@ -16,6 +16,6 @@ public class Segundo implements IntegerSerializable {
 
     @Override
     public Integer valueOf() {
-        return null;
+        return value;
     }
 }
