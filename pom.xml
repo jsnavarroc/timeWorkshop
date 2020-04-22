@@ -93,6 +93,12 @@
 			<version>3.10</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.reactivex.rxjava3</groupId>
+			<artifactId>rxjava</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
 
 	</dependencies>
 
